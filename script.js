@@ -16,11 +16,13 @@ async function carregarImagens(urls, id) {
 
 
 const repo = 'desweb24/portfolio';
-
+document.addEventListener('DOMContentLoaded', function() {
 //Imagens Página Index
 const img1 =[
     `https://api.github.com/repos/${repo}/contents/homepage.jpeg`
 ];
+
+
 const imgRS = [
     `https://api.github.com/repos/${repo}/contents/rockstar1.png`
 ];
@@ -137,3 +139,4 @@ const pit2 = [
 ];
 
 carregarImagens(pit2, 'pit2');
+});
