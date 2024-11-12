@@ -1,13 +1,10 @@
 async function carregarImagens(urls, id) {
-    
 
     for (const url of urls) {
-       const resposta = await fetch(url);
-        
+        const resposta = await fetch(url);
         if (resposta.ok) {
             const dados = await resposta.json();
             const imagemURL = dados.download_url;
-            
             const imagemElemento = document.createElement('img');
             imagemElemento.src = imagemURL;
             document.getElementById(id).appendChild(imagemElemento);
