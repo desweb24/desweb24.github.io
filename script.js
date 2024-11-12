@@ -1,19 +1,19 @@
 async function carregarImagens(urls, id) {
 
-    const token  ='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';
+    let token  ='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';
 
-    for (const url of urls) {
-        const resposta = await fetch(url, {
+    for (let url of urls) {
+        let resposta = await fetch(url, {
             headers: {
                 Authorization: `token ${token}`
             }
         });
 
         if (resposta.ok) {
-            const dados = await resposta.json();
-            const imagemURL = dados.download_url;
+            let dados = await resposta.json();
+            let imagemURL = dados.download_url;
 
-            const imagemElemento = document.createElement('img');
+            let imagemElemento = document.createElement('img');
             imagemElemento.src = imagemURL;
 
             document.getElementById(id).appendChild(imagemElemento);
@@ -24,18 +24,18 @@ async function carregarImagens(urls, id) {
 }
 
 
-const repo = 'desweb24/desweb24.github.io';
+let repo = 'desweb24/desweb24.github.io';
 
-//document.addEventListener('DOMContentLoaded', function() {
+
 //Imagens Página Index
-const img1 =[
+let img1 =[
     `https://api.github.com/repos/${repo}/contents/folder/homepage.jpeg`
 ];
 
-const imgRS = [
+let imgRS = [
     `https://api.github.com/repos/${repo}/contents/folder/rockstar1.png`
 ];
-const imgPIT = [
+let imgPIT = [
     `https://api.github.com/repos/${repo}/contents/folder/picit1.png`
 ];
 
@@ -44,30 +44,30 @@ carregarImagens(imgRS,'imgRS');
 carregarImagens(imgPIT,'imgPIT');
 
 //Imagens Página Sobre
-const imgSobre = [
-    `https://api.github.com/repos/${repo}/contents/folder/sobre.JPG`
+let imgSobre = [
+    `https://api.github.com/repos/${repo}/contents/img/sobre.JPG`
 ];
 
 carregarImagens(imgSobre,'imgSobre');
 
 //imagem fotografia
-const ft = [
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia.png`
+let ft = [
+    `https://api.github.com/repos/${repo}/contents/img/fotografia.png`
 ];
-const foto_jps = [
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia1_1.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia1_2.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia1_3.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia1_4.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia1_5.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia1_6.jpeg`
+let foto_jps = [
+    `https://api.github.com/repos/${repo}/contents/img/fotografia11.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia12.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia13.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia14.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia15.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia16.jpeg`
 ];
-const foto_fw = [
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia2_1.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia2_2.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia2_3.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia2_4.jpeg`,
-    `https://api.github.com/repos/${repo}/contents/folder/fotografia2_5.jpeg`
+let foto_fw = [
+    `https://api.github.com/repos/${repo}/contents/img/fotografia21.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia22.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia23.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia24.jpeg`,
+    `https://api.github.com/repos/${repo}/contents/img/fotografia25.jpeg`
 ];
 
 
@@ -76,30 +76,30 @@ carregarImagens(foto_jps,'foto_jps');
 carregarImagens(foto_fw,'foto_fw');
 
 // Imagens Rocktar
-const rs1 = [
-    `https://api.github.com/repos/${repo}/contents/folder/rockstar1.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/rockstar3.png`,
+let rs1 = [
+    `https://api.github.com/repos/${repo}/contents/img/rockstar1.png`,
+    `https://api.github.com/repos/${repo}/contents/v/rockstar3.png`,
 ];
-const mup1 = [
-    `https://api.github.com/repos/${repo}/contents/folder/mockup_user1.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/mockup_user2.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/mockup_user3.png`,
+let mup1 = [
+    `https://api.github.com/repos/${repo}/contents/img/mockupuser1.png`,
+    `https://api.github.com/repos/${repo}/contents/img/mockupuser2.png`,
+    `https://api.github.com/repos/${repo}/contents/img/mockupuser3.png`,
 ];
-const mup2 = [
-    `https://api.github.com/repos/${repo}/contents/folder/mockup_musico1.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/mockup_musico2.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/mockup_musico3.png`,
+let mup2 = [
+    `https://api.github.com/repos/${repo}/contents/img/mockupmusico1.png`,
+    `https://api.github.com/repos/${repo}/contents/img/mockupmusico2.png`,
+    `https://api.github.com/repos/${repo}/contents/img/mockupmusico3.png`,
 ];
 
-const rock_pf1 = [
-    `https://api.github.com/repos/${repo}/contents/folder/pf_user1.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/pf_user2.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/pf_user3.png`,
+let rock_pf1 = [
+    `https://api.github.com/repos/${repo}/contents/img/pfuser1.png`,
+    `https://api.github.com/repos/${repo}/contents/img/pfuser2.png`,
+    `https://api.github.com/repos/${repo}/contents/img/pfuser3.png`,
 ];
-const rock_pf2 = [
-    `https://api.github.com/repos/${repo}/contents/folder/pf_musico1.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/pf_musico2.png`,
-    `https://api.github.com/repos/${repo}/contents/folder/pf_musico3.png`,
+let rock_pf2 = [
+    `https://api.github.com/repos/${repo}/contents/img/pfmusico1.png`,
+    `https://api.github.com/repos/${repo}/contents/img/pfmusico2.png`,
+    `https://api.github.com/repos/${repo}/contents/img/pfmusico3.png`,
 ];
 
 
@@ -111,21 +111,21 @@ carregarImagens(rock_pf2,'rock_pf2');
 
 
 //Imagens T7T
-const topo_logo= [
-    `https://api.github.com/repos/${repo}/contents/t7t_1.png`,
-    `https://api.github.com/repos/${repo}/contents/t7t_2.png`,
+let topo_logo= [
+    `https://api.github.com/repos/${repo}/contents/img/t7t1.png`,
+    `https://api.github.com/repos/${repo}/contents/img/t7t2.png`,
 ];
 
-const logo =  [
-    `https://api.github.com/repos/${repo}/contents/t7t_2.png`,
+let logo =  [
+    `https://api.github.com/repos/${repo}/contents/img/t7t2.png`,
 ];
 
-const sec_logo= [
-    `https://api.github.com/repos/${repo}/contents/t7t_3.png`
+let sec_logo= [
+    `https://api.github.com/repos/${repo}/contents/img/t7t3.png`
 ];
 
-const var_logo= [
-    `https://api.github.com/repos/${repo}/contents/t7t_4.png`
+let var_logo= [
+    `https://api.github.com/repos/${repo}/contents/img/t7t4.png`
 ];
 
 carregarImagens(topo_logo, 'topo_logo');
@@ -135,17 +135,16 @@ carregarImagens(var_logo,'var_logo');
 
 
 // Imagens do fundo
-const imagensPF = [
-    `https://api.github.com/repos/${repo}/contents/rockstar2.png`,
-    `https://api.github.com/repos/${repo}/contents/rockstar4.png`,
+let imagensPF = [
+    `https://api.github.com/repos/${repo}/contents/img/rockstar2.png`,
+    `https://api.github.com/repos/${repo}/contents/img/rockstar4.png`,
 ];
 
 carregarImagens(imagensPF, 'imagePF');
 
 //Imagem picit
-const pit2 = [
-    `https://api.github.com/repos/${repo}/contents/picit2.png`
+let pit2 = [
+    `https://api.github.com/repos/${repo}/contents/img/picit2.png`
 ];
 
 carregarImagens(pit2, 'pit2');
-//});
