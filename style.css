@@ -1,0 +1,519 @@
+/*          FOR ALL         */
+*{
+    margin:0;
+}
+
+
+body{
+    background-color: #1D1B1B;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF; 
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 100px;
+    
+}
+body p{
+    line-height: 150%;
+}
+
+h1{
+    font-family: 'Archivo', sans-serif;  
+    font-weight: 500;
+    font-size: 12vw;
+}
+/*          index.html          */
+
+.titulo{
+    text-align: center;
+    font-weight:500;
+    margin-top: 150px;
+    position: relative;
+}
+
+.seta {
+    font-size: 24px;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    color: #E1FF00;
+    animation: bounce 2s infinite;
+}
+
+/* Animação */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.sobre{
+    display:flex;
+    flex-direction: row;
+    gap: 60px;
+    
+}
+.sobre-texto{
+    flex:1; 
+}
+
+.sobre-texto p{
+    line-height:150%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.btn{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: #FFFFFF;
+    color:#1D1B1B;
+}
+
+.img-sobre img{
+    width: 345px;
+    height: auto;
+    
+}
+
+.projetos{
+    text-align: center;
+    margin: 120px 0;
+
+}
+.projetos h2{
+    color: #E1FF00;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.galProjetos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: row;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+.galProjetos a{
+    text-decoration: none;
+}
+
+.projeto{
+    background-color: #FFFFFF;
+    border-radius:60px;
+    width: 450px;
+    height: 300px;
+}
+
+.projeto img{
+    width: 100%;
+    height: auto;
+}
+
+.textProjeto{
+    color:#FFFFFF;
+    text-align: left;
+    margin: 20px 0;
+}
+#vermais{
+    margin-top: 40px;
+}
+
+/*          sobre.html          */
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    gap: 200px;
+}
+
+.apresentacao p{
+    flex: 1;
+    line-height: 150%;
+    
+}
+
+.imgSobre img{
+    width: 220px;
+    height: auto;
+}
+
+
+/*          Projetos.html          */
+
+.projs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0;  
+}
+
+.projs a{
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.proj{
+    background-color: #FFFFFF;
+    border-radius:40px;
+    width: 350px;
+    height: 240px;
+}
+
+.proj img{
+    width: 100%;
+    height: auto;
+}
+
+.textProj{
+    color:#FFFFFF;
+    text-align: left;
+    margin: 20px 0;
+    width: 350px;
+}
+
+/*          Rockstar.html          */
+
+.images-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images-grid img{
+    max-height:400px;
+}
+
+.img-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img-grid img{
+    width:32%;
+    height:auto;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.brief{
+    margin: 100px 0;
+    width: 60%;
+}
+
+.metas{
+    margin: 100px 0;
+    width: 60%;
+}
+
+.wireframes{
+    margin: 100px 0;
+}
+.wireframes p{
+    margin-bottom: 20px;
+}
+.produtoF p{
+    margin-bottom: 20px;
+}
+
+/*      picit.html      */
+
+.pit-img{
+   margin-left: 20%;
+}
+.pit-img img{
+    width: 80%;
+}
+
+/*      fotografia.html     */
+
+.artista{
+    margin:60px 0;
+}
+.artista p{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.img-grid1{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.img-grid1 img{
+    height:350px;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+
+.img-grid2{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.img-grid2 img{
+    width:200px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+
+/*      t7t.html       */
+.t7t-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.t7t-img img{
+    max-height:400px;
+
+}
+
+.paleta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.plt{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+}
+.plt p{
+    font-family: 'Archivo',sans-serif;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+
+#p1{
+    background-color: #FFFDF9;
+    color: #1D1B1B;
+}
+#p2{
+    background-color: #C8BDAC;
+    color: #1D1B1B;
+}
+#p3{
+    background-color: #9F5434;
+    color: #1D1B1B;
+}
+#p4{
+    background-color: #391212;
+    color: #FFFFFF;
+}
+
+.produtoF{
+    margin: 100px 0;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.lg{
+    margin-top: 60px;
+}
+
+.lg img{
+    border-radius: 4px;
+    width: 300px;
+}
+
+
+
+
+@media screen and (max-width:600px){
+    body{
+        font-size: 14px;
+    }
+    h2{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 500;
+        font-size: 40px;
+    }
+    h3{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 400;
+        font-size: 30px;
+    }
+    h4{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 400;
+        font-size: 18px;
+        color: #E1FF00;
+    }
+    
+    /* index */
+    .sobre{
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-sobre{
+        width: 100%;
+        margin: 0;
+
+    }
+    .galProjetos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto{
+        border-radius:40px;
+        width: 330px;
+        height: 240px;
+    }
+
+
+    /* sobre */
+    .apresentacao{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+
+    /* projetos */
+    .projs{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .proj{
+        width: 310px;
+        height: 200px;
+        border-radius: 30px;
+    }
+    .textProj{
+        width: 310px;
+    }
+
+    /* rockstar */
+    .brief{
+        width: 100%;
+    }
+    .metas{
+        width: 100%;
+    }
+    .img-grid img{
+        width:100%;
+    }
+
+    /* picit */
+    .pit-img img{
+        width: 100%;
+    }
+    /* fotografia */
+    .artista p{
+        width: 100%;
+    }
+    .img-grid1{
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+    }
+    .img-grid1 img{
+       height: 280px;
+       margin-bottom: 0px;
+    }
+    .img-grid2{
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+    }
+    .img-grid2 img{
+       width: 100%;
+       margin-bottom: 0px;
+    }
+
+    /* t7t */
+    .paleta{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .plt{
+        margin-bottom: 20px;
+    }
+    
+    
+    
+}
+
+@media screen and (min-width:601px) and (max-width: 1024px){
+
+    h2{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 500;
+        font-size: 45px;
+    }
+    h3{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 400;
+        font-size: 35px;
+    }
+    h4{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 400;
+        font-size: 20px;
+        color: #E1FF00;
+    }
+
+    /* index.html*/
+    .projeto{
+        border-radius:40px;
+        width: 400px;
+        height: 290px;
+    }
+    /* rockstar */
+    .img-grid img{
+        width:48%;
+    }
+    
+}
+
+@media  screen and (min-width: 1025px) {
+ 
+    h2{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 500;
+        font-size: 50px;
+    }
+    h3{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 400;
+        font-size: 40px;
+    }
+    h4{
+        font-family: 'Archivo', sans-serif;  
+        font-weight: 400;
+        font-size: 22px;
+        color: #E1FF00;
+    }
+   
+}

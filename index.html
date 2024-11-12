@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+
+  <body>
+    <header>
+        <input type="checkbox" id="menuB" class="menuB">
+        <label for="menuB" class="B-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="atual">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="projetos.html">PROJETOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <h1>PO<i>R</i>TFÓLI<i>O</i> </h1>
+            <div class="seta">↓</div> 
+        </section>
+        
+        <section class="sobre">
+            <div class="sobre-texto">
+                <p>🙎🏼‍♀️ Olá, o meu nome é Francisca Ramos.<br><br> 🎓 Licenciada em Design e Multimédia pela Universidade de Coimbra.<br><br>
+                👩🏼‍💻 Sempre tive interesse na área de Design mas só durante a minha licenciatura é que percebi que a minha vocação estava relacionada com Design de Interação.
+                </p>
+                <a href="sobre.html" target="_self"> <button class="btn">Mais sobre mim</button> </a>
+            </div>
+            <div id="img1" class="img-sobre"></div>    
+        </section>
+
+        <section class="projetos">
+            <h2>ALGUNS DOS MEUS PROJETOS</h2>
+            <div class="galProjetos">
+                <a href="rockstar.html" target="_self"><div >
+                    <div id="imgRS" class="projeto"></div>
+                    <div class="textProjeto">
+                        <p style="font-family: 'Archivo';font-weight: 500;font-size: 20px;">ROCKSTAR</p>
+                        <p style="font-weight: 400;">Design de Website</p>
+                    </div>   
+                </div></a>
+                <a href="picit.html" target="_self"><div>
+                    <div id="imgPIT" class="projeto"></div>
+                    <div class="textProjeto">
+                        <p style="font-family: 'Archivo';font-weight: 500;font-size: 20px;">PICIT</p>
+                        <p style="font-weight: 400;">Design de Aplicação Móvel</p>
+                    </div>   
+                </div></a>
+            </div>
+
+            <a href="projetos.html" target="_self"> <button id="vermais" class="btn">Ver mais</button> </a>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
