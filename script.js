@@ -1,4 +1,5 @@
 async function carregarImagens(urls, id) {
+    const resposta = await fetch(url);
 
     for (const url of urls) {
        
