@@ -1,4 +1,7 @@
 async function carregarImagens(urls, id) {
+    const headers = {
+        'Authorization': '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'  // Substitua com seu token do GitHub
+    };
 
     for (const url of urls) {
         const resposta = await fetch(url);
